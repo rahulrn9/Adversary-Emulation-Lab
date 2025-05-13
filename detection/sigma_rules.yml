@@ -1,0 +1,10 @@
+title: Pass-the-Ticket Detection
+logsource:
+  product: windows
+  service: security
+detection:
+  selection:
+    EventID: 4624
+    LogonType: 9
+  condition: selection
+level: high
